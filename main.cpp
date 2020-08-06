@@ -12,11 +12,22 @@
 
 using namespace std;
 
+
+/**
+ * Trabajo 3 Analisis de ALgoritmo
+ * @param argc cantidad de argumentos
+ * @param argv argumentos
+ * @return El código de salida del programa
+ */
 int main(int argc,char** argv){
     mensajeprincipal();
 
-    string archivo(argv[2]);
-    obtener(archivo);
-    participantes();
-    return 0;
+    if (argc > 1) {
+        string archivo(argv[2]);
+        obtener(archivo);
+        participantes();
+    } else {
+        participantes();
+    }
+    return EXIT_SUCCESS;
 }
