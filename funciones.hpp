@@ -1,7 +1,8 @@
 #ifndef FUNCIONES_H
 #define FUNCIONES_H
 
-using namespace std;
+#include <vector>
+#include <string>
 /**
  * Función que muestra los participantes del grupo
  */
@@ -15,6 +16,6 @@ void mensajeprincipal();
 /**
  * Obtener elementos por fila
  */
-vector<string> obtenerdatos(string);
+std::vector<std::string> obtenerdatos(std::string fila);
 
 #endif //FUNCIONES_H
