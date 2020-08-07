@@ -24,9 +24,27 @@ int main(int argc,char** argv){
 
     if (argc > 1) {
         string archivo(argv[2]);
-        obtener(archivo);
-        participantes();
-    } else {
+        ifstream lectura(archivo);
+        if(lectura){
+            for (string linea; getline(lectura,linea) ; ) {
+                vector<string> arreglo = obtenerdatos(linea);
+                /**
+                 * al obtener los datos se deberia
+                 * buscar de 1 a 11 correspondiente 
+                 * a los semestres para empezar 
+                 * a añadir con lo que esta abajo
+                 */
+                string carrera = arreglo.at(1);
+                std::string convertir = arreglo.at(0);
+                //cout<<convertir<<endl;
+                int numero=atoi(convertir.c_str());
+                cout<<numero<<"    ";
+                string salida=carrera + " - " + arreglo.at(2);
+                cout<<salida<<endl;       
+            }
+            participantes();
+        }
+    }else {
         participantes();
     }
     return EXIT_SUCCESS;

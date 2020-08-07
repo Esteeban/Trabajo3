@@ -22,14 +22,16 @@ void mensajeprincipal(){
     cout<<"Generación Horario para semana de Pruebas en la Universidad"<<endl<<endl;
 }
 
-void obtener(string archivo){
-    ifstream lectura(archivo);
-    string fila;
-    if(lectura){
-        for (string linea; getline(lectura,linea) ; ) {
-            if(linea[1]=='1' and linea[2]=='"'){
-                cout<<linea<<endl;
-            }
-        }
+
+vector<string> obtenerdatos(string fila){
+    vector<string> arreglo;
+    stringstream od(fila);
+    string item;
+
+    while(getline(od,item,';')){
+        string dato = item;
+        arreglo.push_back(dato);
     }
+    return arreglo;
 }
+

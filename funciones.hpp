@@ -13,11 +13,8 @@ void participantes();
 void mensajeprincipal();
 
 /**
- * Obtener ramos 1er semestre
+ * Obtener elementos por fila
  */
-
-void obtener(string);
-
-
+vector<string> obtenerdatos(string);
 
 #endif //FUNCIONES_H
