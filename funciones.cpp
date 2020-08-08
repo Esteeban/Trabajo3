@@ -21,9 +21,7 @@ void participantes(){
 }
 
 void mensajeprincipal(){
-    std::cout<<"====  Proyecto 3 - Analisis de ALgoritmo  ====";
-    std::cout<<endl<<endl;
-    std::cout<<"Generación Horario para semana de Pruebas en la Universidad";
+    std::cout<<"====  Trabajo 3 - Proyecto Asignación salas  ====";
     std::cout<<endl<<endl;
 }
 
@@ -49,4 +47,6 @@ std::vector<string> obtenerdatos(std::string linea){
     }
     return arreglo;
 }
+
+
 

@@ -15,7 +15,9 @@ void mensajeprincipal();
 
 /**
  * Funcion para obtener datos del archivo
- * dentro de la funcion se eliminan las comillas 
+ * dentro de la funcion se eliminan las comillas
+ * @param string --> se ingresa la linea que proviene 
+ * de leer el archivo ramos.csv
  */
 std::vector<std::string> obtenerdatos(std::string linea);
 
