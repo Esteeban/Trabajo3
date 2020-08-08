@@ -9,13 +9,14 @@
 void participantes();
 
 /**
- * Mensaje de bienvenida
+ * Función que muestra el mensaje de bienvenida
  */
 void mensajeprincipal();
 
 /**
- * Obtener elementos por fila
+ * Funcion para obtener datos del archivo
+ * dentro de la funcion se eliminan las comillas 
  */
-std::vector<std::string> obtenerdatos(std::string fila);
+std::vector<std::string> obtenerdatos(std::string linea);
 
 #endif //FUNCIONES_H

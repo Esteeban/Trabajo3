@@ -10,8 +10,9 @@
 using namespace std;
 
 void participantes(){
+    std::cout<<std::endl<<std::endl;
     std::cout<<"========================";
-    std::cout<<endl;
+    std::cout<<std::endl;
     std::cout<<"Integrantes del grupo: "<<std::endl;
     std::cout<<"Andres Munoz G."<<std::endl;
     std::cout<<"Esteban Rojas R."<<std::endl;
@@ -27,13 +28,23 @@ void mensajeprincipal(){
 }
 
 
-std::vector<std::string> obtenerdatos(std::string fila){
+/**Funcion para obtener los datos del archivo
+ * y al obtener los datos se eliminan las comillas
+ */
+std::vector<string> obtenerdatos(std::string linea){
     std::vector<string> arreglo;
-    std::stringstream od(fila);
+    std::stringstream reem(linea);
     std::string item;
-
-    while(getline(od,item,';')){
-        std::string dato = item;
+    
+    std::string comilla="\"";
+    std::string nada="";
+    while(getline(reem,item,';')){
+        std::string dato=item;
+        int pos=dato.find(comilla);
+        while(pos != -1){
+            dato.replace(pos,comilla.size(),nada);
+            pos=dato.find(comilla,pos+nada.size());     
+        }
         arreglo.push_back(dato);
     }
     return arreglo;
