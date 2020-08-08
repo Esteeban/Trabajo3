@@ -1,11 +1,10 @@
-# Trabajo3 Análisis de Algoritmos
-# Proyecto Asignación salas
+# Trabajo 3 - Proyecto Asignación salas
 
 Creación calendario de pruebas para la Universidad Tecnológica Metropolitana a través de una aplicación remota.
 
 ## Visión General
 
->Blockquotes Para todas las instituciones de educación superior, la programación horaria de exámenes, es una tarea dificil de resolver debido a la miltiplicidad de requerimientos concurrentes que debe satisfacer una solución
+>Para todas las instituciones de educación superior, la programación horaria de exámenes, es una tarea dificil de resolver debido a la miltiplicidad de requerimientos concurrentes que debe satisfacer una solución
 
 ## Objetivos
 
