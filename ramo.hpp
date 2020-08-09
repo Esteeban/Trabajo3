@@ -24,7 +24,7 @@ class Ramo{
         void setSemestre(int);
         void setCarrera(std::string);
         void setNombreRamo(std::string);
-        void verRamo(int,std::string,std::string);
+        void verRamo();
 };
 
 #endif //RAMO_HPP

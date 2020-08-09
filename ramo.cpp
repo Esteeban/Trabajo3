@@ -45,9 +45,9 @@ void Ramo::setCarrera(std::string c){
 void Ramo::setNombreRamo(std::string r){
     ramo = r;
 }
-void Ramo::verRamo(int semestre,std::string carrera,std::string nombre ){
+void Ramo::verRamo(){
     std::cout << "Semestre: " << semestre << std::endl;
     std::cout << "Carrera: " << carrera << std::endl;
-    std::cout << "Ramo: " << nombre << std::endl;
+    std::cout << "Ramo: " << ramo << std::endl;
     std::cout<<std::endl;
 }
