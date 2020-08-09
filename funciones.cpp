@@ -6,6 +6,7 @@
 #include <fstream>
 #include <string>
 #include "funciones.hpp" 
+#include "ramo.hpp"
 
 using namespace std;
 
@@ -47,6 +48,7 @@ std::vector<string> obtenerdatos(std::string linea){
     }
     return arreglo;
 }
+
 
 
 

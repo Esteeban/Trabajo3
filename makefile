@@ -21,6 +21,6 @@ all: clean main.o funciones.o ramo.o
 	rm -fr build 
 
 clean:
-	rm -fr *.o a.out core programa dist build
+	rm -fr *.o a.out core programa dist build M2-201.csv M2-202.csv M2-203.csv M2-204.csv M2-205.csv
 
 .DEFAULT_GOAL := all

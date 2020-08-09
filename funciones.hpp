@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <string>
+#include "ramo.hpp"
 /**
  * Función que muestra los participantes del grupo
  */
